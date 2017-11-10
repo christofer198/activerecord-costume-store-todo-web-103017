@@ -3,7 +3,7 @@
 class Costume < ActiveRecord::Base
 
   def created_at
-    
+    Time.now
   end
 
   # def updated_at
