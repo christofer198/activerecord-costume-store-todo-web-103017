@@ -7,6 +7,7 @@ class Costume < ActiveRecord::Base
   end
 
   def updated_at
+    binding.pry
     Costume.where('updated_at')
   end
 
