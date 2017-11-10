@@ -2,14 +2,12 @@
 # It should inherit from ActiveRecord::Base
 class Costume < ActiveRecord::Base
 
-
-  def updated_at
-    Time.now
-  end
   def created_at
     Time.now
   end
 
-
+  def updated_at
+    nil
+  end
 
 end
