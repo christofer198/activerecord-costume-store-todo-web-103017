@@ -10,4 +10,5 @@ class CostumeStore < ActiveRecord::Migration
       t.datetime :opening
       t.datetime :closing
     end
+  end
 end
