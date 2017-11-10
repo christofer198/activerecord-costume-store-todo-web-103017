@@ -7,7 +7,8 @@ class Costume < ActiveRecord::Base
   end
 
   def updated_at
-    Costume.where('updated_at')
+    now = Time.now
+    @locations = Location.where(updated_at: (now - 24.hours)..now)
   end
 
 end
