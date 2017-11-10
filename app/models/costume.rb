@@ -7,7 +7,7 @@ class Costume < ActiveRecord::Base
   end
 
   def updated_at
-    self.find_by(:updated_at)
+    find_by(:updated_at)
   end
 
 end
