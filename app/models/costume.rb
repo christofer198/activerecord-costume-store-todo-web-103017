@@ -7,7 +7,7 @@ class Costume < ActiveRecord::Base
   end
 
   def updated_at
-    costumes.where('updated_at > created_at')
+    Costume.where('updated_at > created_at')
   end
 
 end
