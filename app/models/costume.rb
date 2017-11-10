@@ -8,7 +8,7 @@ class Costume < ActiveRecord::Base
 
   def updated_at
     now = Time.now
-    Location.where('updated_at')
+    Location.where('updated_at > now')
   end
 
 end
