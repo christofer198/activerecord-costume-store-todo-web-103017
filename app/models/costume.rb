@@ -3,7 +3,7 @@
 class Costume < ActiveRecord::Base
   
   def change
-    create_table :costume do |c|
+    create_table :costumes do |c|
       c.string :name
     end
   end
